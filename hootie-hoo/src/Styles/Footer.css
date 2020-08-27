@@ -1,0 +1,31 @@
+.containerFooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 12px;
+    width: 85%;
+}
+    .containerCreators{
+        font-family: 'Open Sans';
+        font-size: 15px;
+        color: #0f0f0f;
+        padding-left: 40px;
+    }
+
+    .containerIconsFooter{
+        padding-right: 40px;
+    }
+    .iconWeb, .iconInsta,
+    .iconHootieHoo{
+        height: 40px;
+        padding: 0px 10px 0px 10px;
+    }

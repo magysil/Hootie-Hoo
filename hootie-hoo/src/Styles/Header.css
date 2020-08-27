@@ -1,0 +1,28 @@
+.containerHeader{
+    /* position: absolute;
+    width: 1252px;
+    height: 172px;
+    left: 90px;
+    top: 53px;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 12px;
+    position: relative; */
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 172px;
+    margin-top: 55px;
+}
+.containerImgHeader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 12px;
+    width: 85%;
+}
+.imgHeader{
+    height: 140px;
+}

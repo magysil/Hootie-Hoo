@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: url("https://i.ibb.co/Zd4J0jP/ddd.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 code {

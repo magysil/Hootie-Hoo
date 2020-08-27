@@ -1,0 +1,62 @@
+.careContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contentCareContainer {
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px 0px 12px 12px;
+    width: 85%;
+    padding: 0px 0px 60px 0px;
+}
+
+.tittleContent {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-img-care{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.splide {
+    padding: 1em 6em 5em 6em;
+}
+
+.splide__arrow svg {
+    width: 7em;
+    height: 7em;
+    fill: #FA6164;
+    transition: fill .2s linear;
+}
+
+.splide__arrow:hover svg {
+    fill: #FB7C7F;
+}
+
+.splide__pagination__page.is-active {
+    background: #FA6164;
+}
+
+.splide__pagination__page {
+    display: inline-block;
+    width: 50px;
+    height: 8px;
+    background: #ccc;
+    border-radius: 2.5px;
+    margin: 5px;
+    padding: 0;
+    transition: all .2s linear;
+    border: none;
+}
