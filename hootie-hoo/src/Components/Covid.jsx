@@ -8,8 +8,8 @@ const Covid = () => {
                     <div className="container ">
                         <div className="row justify-content-between">
                             <div className="col">
-                            <div className="containerImgCovid">
-                                <img className="imgCovid" src="https://i.ibb.co/tMQkXx0/GAV-Personaje07.png" alt="Buho hootie hoo"/>
+                            <div className="containerImgCovidRed">
+                                <img className="imgCovidRed" src="https://i.ibb.co/tMQkXx0/GAV-Personaje07.png" alt="Buho hootie hoo"/>
                             </div>
                             </div>
                             <div className="col-7">

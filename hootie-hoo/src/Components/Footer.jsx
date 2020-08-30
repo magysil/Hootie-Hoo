@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <div className="containerFooter">
             <div className="footerContainer">
-                <div className="containerCreators">
-                    <h4>
+                <div>
+                    <h4 className="containerCreatorsFooter">
                         Copyright© by |  
                         Magally Silva, 
                         Valeria Brito, 

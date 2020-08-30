@@ -40,7 +40,14 @@
             }
 
 @media all and (max-width: 1190px){
-    .welcomeContainer{
-        flex-wrap: wrap;
-    }
+    .welcomeContainer{ flex-wrap: wrap; }
+}
+@media all and (max-width: 650px){
+    .imgWelcome{ height: 300px; }
+}
+@media all and (max-width: 525px){
+    .imgWelcome{ height: 230px; }
+}
+@media all and (max-width: 385px){
+    .imgWelcome{ height: 190px; }
 }

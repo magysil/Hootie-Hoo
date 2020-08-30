@@ -33,6 +33,19 @@ import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
 import '../Styles/Videos.css';
 
 const Videos = () => {
+
+    const upsi = {
+        type        : 'slide',
+        rewind      : true,
+        focus    : 'center',
+        fixedWidth  : 500,
+        trimSpace: false,
+    }
+
+
+
+
+
 	return (
 		<div className="containerVideos">
             <div className="contentContainer">
@@ -40,25 +53,20 @@ const Videos = () => {
                     <h1 className="tittleContent">Videos</h1>
                 </div>
 
-                <Splide
-                options={ {
-                    focus    : 'center',
-                    perPage  : 2,
-                    trimSpace: false,
-				} }>
+                <Splide options={ upsi }>
                     <SplideSlide>
                         <div className="videito">
-                            <ReactPlayer  url="https://www.youtube.com/watch?v=9skA9MFlcs4" controls={true} />
+                            <ReactPlayer className="video" url="https://www.youtube.com/watch?v=9skA9MFlcs4" controls={true} />
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className="videito">
-                            <ReactPlayer  url="https://www.youtube.com/watch?v=G2BHb6kWnRc&t=23s" controls={true} />
+                            <ReactPlayer className="video" url="https://www.youtube.com/watch?v=G2BHb6kWnRc&t=23s" controls={true} />
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className="videito">
-                            <ReactPlayer  url="https://www.youtube.com/watch?v=tuILs6Zedco&t=2s" controls={true} />                        
+                            <ReactPlayer className="video" url="https://www.youtube.com/watch?v=tuILs6Zedco&t=2s" controls={true} />                        
                         </div>
                     </SplideSlide>
                 </Splide>

@@ -31,12 +31,12 @@
 }
 
 .splide {
-    padding: 1em 6em 5em 6em;
+    padding: 1em 5em 5em 5em;
 }
 
 .splide__arrow svg {
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
     fill: #FA6164;
     transition: fill .2s linear;
 }

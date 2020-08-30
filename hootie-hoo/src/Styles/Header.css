@@ -1,13 +1,4 @@
 .containerHeader{
-    /* position: absolute;
-    width: 1252px;
-    height: 172px;
-    left: 90px;
-    top: 53px;
-    background: rgba(255, 255, 255, 0.78);
-    border-radius: 12px;
-    position: relative; */
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,4 +16,13 @@
 }
 .imgHeader{
     height: 140px;
+}
+
+/* <-----------MEDIA QUERY-----------> */
+@media all and (max-width: 768px){
+    .imgHeader{ height: 120px; }
+}
+@media all and (max-width: 425px){
+    .containerHeader{ height: 150px; }
+    .imgHeader{ height: 90px; }
 }
