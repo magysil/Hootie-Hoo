@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import '../Styles/Games.css';
+
 const Games = () => {
     return (
         <div className="containerGames">
@@ -28,7 +30,9 @@ const Games = () => {
                                          
                                         <h3 className='col text-center'>Juguemos</h3>
                                 </div>
-                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames" alt="Buho hootie hoo"/>
+                                   <Link to= "/games/memoryGame">
+                                   <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames" alt="Buho hootie hoo"/>
+                                   </Link> 
                                 </div>
                             </div>
                                 <div className="col">

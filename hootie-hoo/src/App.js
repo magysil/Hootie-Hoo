@@ -16,6 +16,7 @@ import Care from './Components/Care';
 import Guides from './Components/Guides';
 import ButtonsChildren from './Components/ButtonsChildren';
 import ButtonsParents from './Components/ButtonsParents';
+import MemoryGame from './Components/MemoryGame';
 
 const App = () => {
   return (
@@ -33,7 +34,7 @@ const App = () => {
             <Covid />
           </Route>
 
-          <Route path="/games">
+          <Route path="/games" exact>
             <ButtonsChildren />
             <Games />
           </Route>
@@ -59,6 +60,10 @@ const App = () => {
           <Route path="/guides">
             <ButtonsParents />
             <Guides />
+          </Route>
+          <Route path="/games/memoryGame">
+            <ButtonsChildren />
+            <MemoryGame />
           </Route>
 
         </Switch>
