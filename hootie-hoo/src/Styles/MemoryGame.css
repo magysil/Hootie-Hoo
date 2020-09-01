@@ -73,9 +73,15 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
-  .medal-score {
-    width: 25px;
+  .medal-score { width: 30px; }
+  .medal2-score { width: 70px; }
+  .medal3-score,
+  .medal4-score,
+  .medal5-score,
+  .medal6-score {
+    width: 105px;
   }
+
 
   .containerInfoGame{
       display: flex;

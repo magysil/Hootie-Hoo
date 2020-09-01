@@ -1,7 +1,3 @@
-.flex-container {
-    display: flex;
-}
-
 .containerCovid{
     width: 100%;
     display: flex;
@@ -9,67 +5,53 @@
 }
 .covidContainer{
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.78);
     border-radius: 0px 0px 12px 12px;
     width: 85%;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
-    .contentContainerCovid{
-        padding-right: 20px;
-        padding-left: 40px;
+.containerContentCovid{
+    display: flex;
+}
+    .containerImgCovidRed{
+        display: flex;
+        align-items: flex-end;
+        padding-left: 30px;
+        padding-bottom: 20px;
     }
+        .imgCovidRed {
+            height: 300px;
+        }
+    .containerImgCovid{
+        display: flex;
+        padding-right: 30px;
+    }
+        .imgCovid{
+            height: 250px;
+        }
+.containerTextCovid{
+    padding: 0px 10px 50px 10px;
+}
+.paddingCovid{
+    padding: 40px 40px 0px 40px;
+}
 
-    h3 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        color: rgba(0, 0, 0, 0.6);
+/* <-----------MEDIA QUERY-----------> */
+@media all and (max-width: 1200px){
+    .containerContentCovid{ flex-wrap: wrap; }
+    .containerImgCovid{
+        padding-left: 30px;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px;
     }
-            .btnAudioCovid{
-                background: transparent;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                display: flex;
-            }
-                .imgAudio{
-                    height: 80px;
-                }
-            .text{
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 23px;
-                line-height: 30px;
-                color: #0f0f0f;
-                padding-top: 40px;
-               
-            }
-            .containerImgCovidRed{
-                margin-top: 220px;
-                
-        
-            }
-            .imgCovidRed {
-                height: 234px;
-                transform: rotate(-20deg);
-               
-            }
-            .imgCovid{
-                padding-top: 30px;
-                height: 234px;
-                transform: rotate(20deg);
-            }
-            .align-content-center {
-                padding-left: 200px;
-            }
-
-@media all and (max-width: 1190px){
-    .covidContainer{
-        flex-wrap: wrap;
+    .containerImgCovidRed{
+        width: 100%;
+        justify-content: center;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
+    .paddingCovid{ padding: 00px 40px 0px 40px; }
 }

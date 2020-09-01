@@ -11,7 +11,7 @@ const Buttons = () => {
                     <div className="divHover">
                         <Link className="link" to="/covidChildren">
                             <button className="btnChildren">
-                                <h4 className="tittleBtn1">Niños</h4>
+                                <h4 className="tittleBtn1">Niñ@s</h4>
                                 <img className="iconBtn1" src="https://i.ibb.co/3rhYhxz/ghj.png" alt="Botón Niños"/>
                             </button>
                         </Link>

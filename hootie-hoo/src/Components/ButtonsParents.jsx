@@ -11,7 +11,7 @@ const ButtonsParents = () => {
                     <div className="divHoverParents">
                         <Link className="link" to="/covidChildren">
                             <button className="btnChildrenParents">
-                                <h4 className="tittleBtn">Niños</h4>
+                                <h4 className="tittleBtn">Niñ@s</h4>
                                 <img className="iconBtn" src="https://i.ibb.co/3rhYhxz/ghj.png" alt="Botón niños"/>
                             </button>
                         </Link>

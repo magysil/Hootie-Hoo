@@ -12,15 +12,10 @@ class MemoryGame extends React.Component {
     score: 0,
     };
 
-  handleLogin = (name, boolean) => {
-    this.setState({ name: name, showLogin: boolean });
-  };
-
   handleEndGame = (boolean) => {
     if (boolean) {
       this.setState({ showEndGame: boolean, score: this.state.score + 1 });
-    } 
-    else {
+    } else {
       this.setState({ showEndGame: boolean });
     }
   };
@@ -40,7 +35,14 @@ class MemoryGame extends React.Component {
                 <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
                 </div>
                 <div className="detractor-container"> <p className="detractor-title">Medallas</p> 
-                <p className="detractor-score">{score} {score !== 0 ? <img src="https://i.ibb.co/bHZ3mHY/dddd.png" alt="Medal" className="medal-score"/> : null}</p>
+                <p className="detractor-score">
+                  {score === 1 ? <img src="https://i.ibb.co/bHZ3mHY/dddd.png" alt="Medal" className="medal-score"/> : null}
+                  {score === 2 ? <img src="https://i.ibb.co/kX5jM64/Group-11.png" alt="Medal" className="medal2-score"/> : null}
+                  {score === 3 ? <img src="https://i.ibb.co/d6f2y1G/Group-111.png" alt="Medal" className="medal3-score"/> : null}
+                  {score === 4 ? <img src="https://i.ibb.co/5K0DCMV/Group-1111.png" alt="Medal" className="medal4-score"/> : null}
+                  {score === 5 ? <img src="https://i.ibb.co/P4bJPZH/Group-11111.png" alt="Medal" className="medal5-score"/> : null}
+                  {score >= 6 ? <img src="https://i.ibb.co/sFnLZ7S/Group-111111.png" alt="Medal" className="medal6-score"/> : null}
+                </p>
                 </div>
               </div>
 
