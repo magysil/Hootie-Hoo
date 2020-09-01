@@ -1,9 +1,13 @@
 import React from "react";
 import { images } from "./Images/index";
 
+
+
 class Images extends React.Component {
+  
   characters = [];
   vidas = 5;
+
   handleClick = (event) => {
     let character = event.target;
     if (character.getAttribute("check") === "found") {
@@ -50,6 +54,9 @@ class Images extends React.Component {
       this.vidas = this.vidas -1;
       if (this.vidas === 0){
           alert('GAME OVER');
+          this.vidas=5
+          
+                 
      
       }
     console.log(`Te quedan ${this.vidas} Vidas`);
@@ -63,8 +70,7 @@ class Images extends React.Component {
       target.setAttribute("check", "false");
       target.classList.add("image-blank");
     } 
-    
-     else {
+      else {
       target.setAttribute("check", "true");
       target.classList.remove("image-blank");
     }
