@@ -31,11 +31,6 @@ class MemoryGame extends React.Component {
             </div>
             <div className="containerInfoGame">
               <div className="navbar">
-<<<<<<< HEAD
-              <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
-                </div>
-=======
->>>>>>> b32e0f54a06c50fde46f46602042eab4e1e4896c
                 <div className="detractor-container"> <p className="detractor-title">Medallas</p> 
                   <p className="detractor-score">
                     {score === 1 ? <img src="https://i.ibb.co/P6J5Fj4/dddd.png" alt="Medal" className="medal-score"/> : null}
