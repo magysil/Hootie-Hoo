@@ -43,44 +43,44 @@ const Guides = () => {
 				>   
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                        <a href={PdfWhatsHappening} download="HH_GanemosleAlVirus_PDF_M1_T1_que_esta_pasando.pdf"><img width={450} src={WhatsHappening} alt=""/></a>                   
+                        <a href={PdfWhatsHappening} download="HH_GanemosleAlVirus_PDF_M1_T1_que_esta_pasando.pdf"><img className="imgGuides" width={450} src={WhatsHappening} alt=""/></a>                   
                     </div>
                </SplideSlide>
                
                <SplideSlide>
                     <div className="carousel-img-guide">
-                        <a href={PdfCovid} download="HH_GanemosleAlVirus_PDF_M1_T2_que_es_covid.pdf"><img width={450} src={Covid} alt=""/></a>                      
+                        <a href={PdfCovid} download="HH_GanemosleAlVirus_PDF_M1_T2_que_es_covid.pdf"><img className="imgGuides" width={450} src={Covid} alt=""/></a>                      
                     </div>
                 </SplideSlide>
 
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                       <a href={PdfRelations} download="HH_GanemosleAlVirus_PDF_M2_T1_cuidando_relaciones.pdf"><img width={450} src={Relations} alt=""/></a>
+                       <a href={PdfRelations} download="HH_GanemosleAlVirus_PDF_M2_T1_cuidando_relaciones.pdf"><img className="imgGuides" width={450} src={Relations} alt=""/></a>
                     </div>
                 </SplideSlide>     
 
                 
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                       <a href={PdfTalkingWithKids} download="guia-hablando-con-los-pequeños-UNICEF.pdf"><img width={450} src={TalkingWithKids} alt=""/></a>
+                       <a href={PdfTalkingWithKids} download="guia-hablando-con-los-pequeños-UNICEF.pdf"><img className="imgGuides" width={450} src={TalkingWithKids} alt=""/></a>
                     </div>
                 </SplideSlide> 
 
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                       <a href={PdfWhatParentsShouldKnow} download="guia-lo-que-padres-deben-saber-UNICEF.pdf"><img width={450} src={WhatParentsShouldKnow} alt=""/></a>
+                       <a href={PdfWhatParentsShouldKnow} download="guia-lo-que-padres-deben-saber-UNICEF.pdf"><img className="imgGuides" width={450} src={WhatParentsShouldKnow} alt=""/></a>
                     </div>
                 </SplideSlide>
 
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                       <a href={PdfLifeUnicef} download="guia-rearmemos-la-vida-UNICEF.pdf"><img width={450} src={LifeUnicef} alt=""/></a>
+                       <a href={PdfLifeUnicef} download="guia-rearmemos-la-vida-UNICEF.pdf"><img className="imgGuides" width={450} src={LifeUnicef} alt=""/></a>
                     </div>
                 </SplideSlide>
 
                 <SplideSlide>
                     <div className="carousel-img-guide">
-                       <a href={PdfTipsForHome} download="guia-tips-psicológicos-para-estar-en-casa.pdf"><img width={450} src={TipsForHome} alt=""/></a>
+                       <a href={PdfTipsForHome} download="guia-tips-psicológicos-para-estar-en-casa.pdf"><img className="imgGuides" width={450} src={TipsForHome} alt=""/></a>
                     </div>
                 </SplideSlide>
                                            

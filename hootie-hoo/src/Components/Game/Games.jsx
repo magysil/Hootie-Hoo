@@ -80,7 +80,7 @@ const Games = ({ Audio3, Audio4 }) => {
                     </div>
                     <div className="containerImgGames">
                         <Link to= "/games/memoryGame">
-                            <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames"/>
+                            <img className="imgCenterGames" src="https://i.ibb.co/44DP3Md/Sin-t-tulo-2sssrrrsss.jpg" alt="imgGames"/>
                         </Link> 
                     </div>
                     <div className="containerTextAndBtnGames">

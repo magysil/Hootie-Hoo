@@ -129,17 +129,67 @@
     background: rgba(250, 97, 100, 0.86);
     border: 8px solid #FA6164;
     box-sizing: border-box;
+    margin-left: 30px;
   }
   .containerModalGame{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    text-align: center;
   }
   .lala{
     display: flex;
   }
-  
+  .btn-primary{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    width: 236px;
+    height: 67px;
+    margin: 10px;
+    background: #2C4096;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+  }
+  .btn-download{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+
+  color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    width: 236px;
+    height: 67px;
+    background: #EBBD05;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .iconBtnModal{
+    height: 50px;
+  }
+  .btn-primary:hover {
+    color: rgb(250, 236, 236);
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn-primaryy:hover {
+  color: rgb(250, 236, 236);
+  background-color: #FFD62E;
+  border-color: #FFD62E;
+}
 /* <-----------MEDIA QUERY-----------> */
 @media only screen and (max-width: 1349px) {
   .containerInfoGame{
@@ -153,13 +203,16 @@
     margin-bottom: 30px;
   }
   .containerImgMemoryGame{ padding-top: 30px;}
-  .lala{
-    flex-direction: column;
-  }
+  .lala{flex-direction: column;}
   .images{
     width: 100%;
     justify-content: center;
   }
+  .containerModalGame {
+    align-items: center;
+    justify-content: end;
+  }
+  .message {margin-left: 0px;}
 }
 
 @media only screen and (max-width: 700px) {
@@ -178,28 +231,23 @@
     height: 100px;
     width: 100px;
   }
-  .message {
-    width: 350px;
-  }
+  .message {width: 350px;}
 }
 @media only screen and (max-width: 489px) {
   .navbar{flex-direction: column; align-items: center;}
-  .message {
-    width: 300px;
-  }
+  .message {width: 300px;}
 }
 @media only screen and (max-width: 400px) {
   .imgMemoryGame{height: 250px;}
-  .message {
-    width: 260px;
-  }
+  .message {width: 260px;}
 }
 @media only screen and (max-width: 355px) {
-  .image {
-    height: 86px;
-    width: 86px;
-  }
-  .message {
-    width: 220px;
+  .image {height: 86px; width: 86px;}
+  .message {width: 220px;}
+  .btn-primary,
+  .btn-download{
+    font-size: 16px;
+    width: 190px;
+    height: 67px;
   }
 }
