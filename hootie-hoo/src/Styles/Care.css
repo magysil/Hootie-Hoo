@@ -29,6 +29,15 @@
     align-items: center;
     margin-left: 20px;
 }
+.modal.show .modal-dialog {
+    padding-top: 150px;
+}
+.fade modal show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 /* <-----------MEDIA QUERY-----------> */
 @media all and (max-width: 769px){
@@ -67,5 +76,9 @@
     }
     .splide__pagination{
         width: 260px;
+    }
+    .imgModalCare{
+        height: 44vh;
+        width: 29vh;
     }
 }

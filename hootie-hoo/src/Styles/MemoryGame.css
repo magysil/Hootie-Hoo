@@ -1,7 +1,3 @@
-.flex-container {
-    display: flex;
-}
-
 .containerMemoryGames{
     width: 100%;
     display: flex;
@@ -18,17 +14,14 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-    .contentContainerMemoryGames{
-        padding-right: 20px;
-        padding-left: 40px;
-    }
 
-    h3 {
+    .titleMemoryGame{
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
         color: rgba(0, 0, 0, 0.6);
+        text-align: center;
     }
 
 /* <------------Juego--------------> */
@@ -40,27 +33,17 @@
     height: 100vh;
     width: 100vw;
   }
-  
-  .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 40vw;
-    text-align: center;
-    box-shadow: 6px 6px 6px gray;
-    background: white;
-  }
-  
+
   .navbar {
     display: flex;
     box-shadow: 4px 4px 6px gray;
     flex-direction: column;
     justify-content: space-around;
-    width: 300px;
+    width: 230px;
     background: rgba(139, 190, 243, 0.8);
     border: 5px solid #8BBEF3;
     box-sizing: border-box;
+    margin: 12px;
   }
 
   .detractor-title, .detractor-score {
@@ -73,20 +56,21 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
-  .medal-score { width: 30px; }
-  .medal2-score { width: 70px; }
-  .medal3-score,
-  .medal4-score,
-  .medal5-score,
-  .medal6-score {
-    width: 105px;
-  }
-
+  .medal-score{width: 105px;}
 
   .containerInfoGame{
       display: flex;
+      width: 100%;
+      padding: 30px;
+      justify-content: center;
   }
-  
+  .containerImgMemoryGame{
+    display: flex;
+    align-items: center;
+  }
+  .imgMemoryGame{
+    height: 350px;
+  }
   .game {
     display: flex;
     justify-content: center;
@@ -99,8 +83,6 @@
     flex-wrap: wrap;
     height: 450px;
     width: 570px;
-    /*box-shadow: 2px 2px 2px gray;*/
-    margin-left: 40px ;
   }
   
   .image {
@@ -141,28 +123,83 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    width: 40vw;
-    background: rgb(247, 160, 160);
+    height: 400px;
+    width: 500px;
     box-shadow: 12px 12px 10px gray;
+    background: rgba(250, 97, 100, 0.86);
+    border: 8px solid #FA6164;
+    box-sizing: border-box;
+  }
+  .containerModalGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lala{
+    display: flex;
   }
   
-  @media only screen and (max-width: 600px) {
-    .image {
-      height: 100px;
-      width: 110px;
-      margin: 5px;
-    }
-    .message {
-      width: 400px;
-    }
-    .login {
-      width: 400px;
-    }
+/* <-----------MEDIA QUERY-----------> */
+@media only screen and (max-width: 1349px) {
+  .containerInfoGame{
+    flex-direction: column;
+    align-items: center;
   }
+  .navbar{
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .containerImgMemoryGame{ padding-top: 30px;}
+  .lala{
+    flex-direction: column;
+  }
+  .images{
+    width: 100%;
+    justify-content: center;
+  }
+}
 
-@media all and (max-width: 1190px){
-    .memoryGamesContainer{
-        flex-wrap: wrap;
-    }
+@media only screen and (max-width: 700px) {
+  .images {
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
+  .message {
+    height: 350px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .image {
+    height: 100px;
+    width: 100px;
+  }
+  .message {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 489px) {
+  .navbar{flex-direction: column; align-items: center;}
+  .message {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .imgMemoryGame{height: 250px;}
+  .message {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .image {
+    height: 86px;
+    width: 86px;
+  }
+  .message {
+    width: 220px;
+  }
 }

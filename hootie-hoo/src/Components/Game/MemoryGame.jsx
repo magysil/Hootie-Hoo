@@ -6,7 +6,6 @@ import '../../Styles/MemoryGame.css';
 
 class MemoryGame extends React.Component {
   state = {
-    showLogin: true,
     showEndGame: false,
     name: "",
     score: 0,
@@ -27,30 +26,36 @@ class MemoryGame extends React.Component {
 
       <div className="containerMemoryGames">
         <div className="memoryGamesContainer">
-            <div className="container">
-              <h3>Contenedor MemoryGamesContainer</h3>
+            <div className="containerTittleMemoryGame">
+              <h3 className="titleMemoryGame">Juego de Memoria</h3>
             </div>
             <div className="containerInfoGame">
               <div className="navbar">
+<<<<<<< HEAD
               <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
                 </div>
+=======
+>>>>>>> b32e0f54a06c50fde46f46602042eab4e1e4896c
                 <div className="detractor-container"> <p className="detractor-title">Medallas</p> 
-                <p className="detractor-score">
-                  {score === 1 ? <img src="https://i.ibb.co/bHZ3mHY/dddd.png" alt="Medal" className="medal-score"/> : null}
-                  {score === 2 ? <img src="https://i.ibb.co/kX5jM64/Group-11.png" alt="Medal" className="medal2-score"/> : null}
-                  {score === 3 ? <img src="https://i.ibb.co/d6f2y1G/Group-111.png" alt="Medal" className="medal3-score"/> : null}
-                  {score === 4 ? <img src="https://i.ibb.co/5K0DCMV/Group-1111.png" alt="Medal" className="medal4-score"/> : null}
-                  {score === 5 ? <img src="https://i.ibb.co/P4bJPZH/Group-11111.png" alt="Medal" className="medal5-score"/> : null}
-                  {score >= 6 ? <img src="https://i.ibb.co/sFnLZ7S/Group-111111.png" alt="Medal" className="medal6-score"/> : null}
-                </p>
+                  <p className="detractor-score">
+                    {score === 1 ? <img src="https://i.ibb.co/P6J5Fj4/dddd.png" alt="Medal" className="medal-score"/> : null}
+                    {score === 2 ? <img src="https://i.ibb.co/6WQng8x/Group-11.png" alt="Medal" className="medal-score"/> : null}
+                    {score === 3 ? <img src="https://i.ibb.co/TrS9kG2/Group-111.png" alt="Medal" className="medal-score"/> : null}
+                    {score === 4 ? <img src="https://i.ibb.co/5K0DCMV/Group-1111.png" alt="Medal" className="medal-score"/> : null}
+                    {score === 5 ? <img src="https://i.ibb.co/P4bJPZH/Group-11111.png" alt="Medal" className="medal-score"/> : null}
+                    {score >= 6 ? <img src="https://i.ibb.co/sFnLZ7S/Group-111111.png" alt="Medal" className="medal-score"/> : null}
+                  </p>
                 </div>
               </div>
 
-              <div>
+              <div className="containerModalGame">
                 {showEndGame ? <EndGame newGame={this.handleEndGame} /> : null}
                 <Game endGame={this.handleEndGame} />
               </div>
             </div>
+            <div className="containerImgMemoryGame">
+                <img className="imgMemoryGame" src="https://i.ibb.co/vk3qPYn/ni-os.png" alt=""/>
+              </div>
         </div>
       </div>
     );

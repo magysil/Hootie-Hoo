@@ -1,78 +1,54 @@
-.flex-container {
-    display: flex;
-}
-
-.imgCenterGames{
-    width: 350px;
-    margin-top: 87px;
-}
-
 .containerGames{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.gamesContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.78);
-    border-radius: 0px 0px 12px 12px;
-    width: 85%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-    .contentContainerGames{
-        padding-right: 20px;
-        padding-left: 40px;
+    .gamesContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.78);
+        border-radius: 0px 0px 12px 12px;
+        width: 85%;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
-
-    h3 {
+    .containerInformationGames{
+        display: flex;
+    }
+    .containerImgGames{
+        display: flex;
+        align-items: center;
+    }
+        .imgCenterGames{
+            width: 400px;
+        }
+    .textGames{
         font-family: 'Open Sans';
         font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        color: rgba(0, 0, 0, 0.6);
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 30px;
+        color: #0f0f0f;
+        padding-top: 40px;
+        text-align: justify;      
     }
-            .btnAudioGames{
-                background: transparent;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                display: flex;
-            }
-                .imgAudio{
-                    height: 80px;
-                }
-            .text{
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 23px;
-                line-height: 30px;
-                color: #0f0f0f;
-                padding-top: 40px;
-               
-            }
-            .containerImgGamesRed{
-                margin-top: 0px;
-                
-        
-            }
-            .imgGamesRed {
-                height: 234px;
-                transform: rotate(-20deg);
-               
-            }
-            .imgGames{
-                padding-top: 30px;
-                height: 234px;
-                transform: rotate(20deg);
-            }
-
-
-@media all and (max-width: 1190px){
-    .gamesContainer{
-        flex-wrap: wrap;
+    .containerTextAndBtnGames{
+        width: 100%;
+        height: 100%;
+        padding: 10px 40px 40px 40px;
     }
+
+/* <-----------MEDIA QUERY-----------> */
+@media all and (max-width: 1026px){
+    .containerInformationGames{ flex-direction: column; }
+    .containerImgGames{ justify-content: center; }
+    .containerTextAndBtnGames{ padding: 40px 40px 10px 40px; }
+}
+@media all and (max-width: 523px){
+    .imgCenterGames{ width: 300px; }
+}
+@media all and (max-width: 400px){
+    .imgCenterGames{ width: 200px; }
 }
