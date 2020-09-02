@@ -32,7 +32,7 @@ class MemoryGame extends React.Component {
             </div>
             <div className="containerInfoGame">
               <div className="navbar">
-                <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
+              <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
                 </div>
                 <div className="detractor-container"> <p className="detractor-title">Medallas</p> 
                 <p className="detractor-score">

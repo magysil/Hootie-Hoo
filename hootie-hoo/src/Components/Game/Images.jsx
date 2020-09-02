@@ -4,11 +4,14 @@ import { images } from "./Images/index";
 
 
 class Images extends React.Component {
+  state = {
+    vidas:  5,
+  };
   
   characters = [];
-  vidas = 5;
 
   handleClick = (event) => {
+    
     let character = event.target;
     if (character.getAttribute("check") === "found") {
       return;
@@ -44,18 +47,25 @@ class Images extends React.Component {
       }
     }
 
-    if (this.vidas === 0) {
+    if (this.state.vidas === 0) {
       alert('GAME OVER');
       let reset = document.getElementsByClassName("image");
       for (let i = 0; i < reset.length; i++) {
         reset[i].classList.add("image-blank");
         reset[i].setAttribute("check", "false");
         this.characters = [];
-        this.vidas = 5;
+        this.setState({ vidas: 5 });
       }
-
     }
   };
+ 
+ /*  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.vidas === nextState.vidas) {
+      return false;
+    } else {
+      return true;
+    }
+  } */
 
   checkName = (character1, character2) => {
     if (character1.getAttribute("name") === character2.getAttribute("name")) {
@@ -63,11 +73,8 @@ class Images extends React.Component {
       character2.setAttribute("check", "found");
       return true;
     }else {
-      this.vidas = this.vidas -1;
-     
-    console.log(`Te quedan ${this.vidas} Vidas`);
+      this.setState({ vidas: this.state.vidas - 1 });
     }
-    
     return false;
   };
 
@@ -83,21 +90,27 @@ class Images extends React.Component {
 
   render() {
     return (
-      <div className="images">
-        {images
-          .sort(() => Math.random() - 0.5)
-          .map((element) => {
-            return (
-              <div
-                className="image image-blank"
-                name={element.name}
-                style={{ background: `url(${element.pic})` }}
-                check="false"
-                onClick={this.handleClick}
-              />
-            );
-          })}
+      <div>
+        <div>
+            <h2>Lives: {this.state.vidas}</h2>
+        </div>
+        <div className="images">
+          {images
+           .sort() //> Math.random() - 0.5)
+            .map((element) => {
+              return (
+                <div
+                  className="image image-blank"
+                  name={element.name}
+                  style={{ background: `url(${element.pic})` }}
+                  check="false"
+                  onClick={this.handleClick}
+                />
+              );
+            })}
+        </div>
       </div>
+      
     );
   }
 }
